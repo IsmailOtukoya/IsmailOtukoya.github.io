@@ -1,49 +1,56 @@
-/* Global Styles */
 body {
-    background-color: #1c1c1c;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    background-image: url('data-visualization-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    padding: 50px;
-    background-color: #333;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 header h1 {
-    font-size: 3em;
     margin: 0;
+    font-size: 2.5em;
 }
 
 header p {
     font-size: 1.2em;
 }
 
-header a {
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #08fdd8;
     font-size: 1.1em;
-    border: 2px solid #08fdd8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-    display: inline-block;
-    transition: background 0.3s, color 0.3s;
 }
 
-header a:hover {
-    background-color: #08fdd8;
-    color: #1c1c1c;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-#about, #projects, #contact {
-    padding: 50px;
-    text-align: center;
+section {
+    padding: 100px 20px;
 }
 
 h2 {
@@ -51,35 +58,38 @@ h2 {
     margin-bottom: 20px;
 }
 
-.project-card {
-    background-color: #333;
+.project {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px 0;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+.project h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
 }
 
-.project-card h3 a {
+.project a {
+    color: #fff;
     text-decoration: none;
-    color: #08fdd8;
+    font-size: 1.1em;
 }
 
-.project-card p {
-    margin: 15px 0;
-}
-
-#contact a {
-    color: #08fdd8;
-    text-decoration: none;
-}
-
-#contact a:hover {
+.project a:hover {
     text-decoration: underline;
 }
 
+footer {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
