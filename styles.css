@@ -1,111 +1,100 @@
-/* Global Styles */
 body {
-    background-color: #1c1c1c;
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f;
     color: #fff;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    position: relative;
-    overflow-x: hidden;
-}
-
-/* Background Animation Styles */
-#background-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('data-visualization-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.08;
-    filter: blur(2px);
-    animation: pulse 5s infinite alternate;
-}
-
-/* Pulse Animation for Background */
-@keyframes pulse {
-    0% { opacity: 0.05; }
-    100% { opacity: 0.1; }
-}
-
-/* Header Section */
-header {
+  }
+  
+  header {
     text-align: center;
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+  }
+  
+  header h1 {
+    font-size: 50px;
+  }
+  
+  header p {
+    font-size: 18px;
+    color: #aaa;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
     color: #fff;
-}
-
-header h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-header a {
     text-decoration: none;
-    color: #08fdd8;
-    font-size: 1.1em;
-    border: 2px solid #08fdd8;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 15px;
-    display: inline-block;
-    transition: background 0.3s, color 0.3s;
-}
-
-header a:hover {
-    background-color: #08fdd8;
-    color: #1c1c1c;
-}
-
-/* About Section */
-#about, #projects, #contact {
-    padding: 50px;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Project Card Styling */
-.project-card {
+  }
+  
+  .category-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .category-bar button {
     background-color: #333;
+    color: #fff;
+    border: none;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
+  }
+  
+  .card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.project-card h3 a {
-    text-decoration: none;
-    color: #08fdd8;
-}
-
-.project-card p {
-    margin: 15px 0;
-}
-
-/* Contact Section */
-#contact a {
-    color: #08fdd8;
-    text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-info {
+    padding: 20px;
+  }
+  
+  .card-info h3 {
+    margin: 0;
+  }
+  
+  #about {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #contact {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+  }
+  

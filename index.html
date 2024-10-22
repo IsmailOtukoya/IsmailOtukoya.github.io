@@ -1,102 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ismail Otukoya Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Animation Section -->
-    <div id="background-animation"></div>
+  <!-- Home Page -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Hi! Glad to see you here. This is a collection of my personal projects made during my free time.</p>
+  </header>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Ismail Otukoya</h1>
-        <p>Data Scientist & Data Analyst</p>
-        <a href="https://drive.google.com/file/d/1yOMocdigwbCaOgCXh0kFZY_5ckImAoKu/view?usp=drive_link" target="_blank">View My Resume</a>
-    </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Data Scientist and Data Analyst with a passion for using data to solve complex business problems. I specialize in data modeling, machine learning, and creating insightful visualizations. My work includes predictive modeling, customer segmentation, and dynamic pricing strategies.</p>
-    </section>
+  <!-- Categories -->
+  <section id="categories">
+    <div class="category-bar">
+      <button onclick="showCategory('all')">All Categories</button>
+      <button onclick="showCategory('data-visualization')">Data Visualization</button>
+      <button onclick="showCategory('data-science')">Data Science</button>
+      <button onclick="showCategory('creative-writing')">Creative Writing</button>
+    </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
+    <div id="projects">
 
-        <section id="projects">
-            <h2>My Projects</h2>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Customer-Segmentation-and-Price-Optimization-Project" target="_blank">Customer Segmentation & Price Optimization</a></h3>
-                <p>Used clustering techniques and price elasticity models to optimize pricing strategies across customer segments.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Dynamic-Pricing-For-Shortlets" target="_blank">Dynamic Pricing for Shortlets</a></h3>
-                <p>Developed a dynamic pricing algorithm for short-term rental properties to maximize occupancy rates and revenue.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Sales-Dashboard-Report" target="_blank">Sales Dashboard Report</a></h3>
-                <p>Created an interactive sales dashboard using Power BI to track sales performance and key metrics over time.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/PowerBI-Complaint-Dashboard" target="_blank">Complaint Dashboard</a></h3>
-                <p>Developed a dashboard to track customer complaints and identify key areas for service improvement using Power BI.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Audio-genre-Classification" target="_blank">Audio Genre Classification</a></h3>
-                <p>Built a machine learning model to classify audio genres using deep learning techniques and spectrogram analysis.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/mlproject" target="_blank">End-to-End ML Project</a></h3>
-                <p>An end-to-end machine learning pipeline covering data collection, cleaning, model building, and deployment.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/RSSB-Submision" target="_blank">Medical Charges Prediction</a></h3>
-                <p>Predicted medical charges based on patient demographics and conditions using regression models.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Price-Prediction-For-Cab-Hailing-Services" target="_blank">Price Prediction for Cab-Hailing Services</a></h3>
-                <p>Built a predictive model to estimate cab fares based on ride data and real-time traffic conditions.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Dynamic-Pricing-Strategy" target="_blank">Dynamic Pricing Strategy</a></h3>
-                <p>Implemented a dynamic pricing strategy for a retail store to optimize profit margins across different products.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/CreditCard-Fraud-Detection-" target="_blank">Credit Card Fraud Detection</a></h3>
-                <p>Developed a fraud detection system using machine learning to identify suspicious transactions.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/Product-Recommendation-system-for-e-commerce" target="_blank">Product Recommendation System</a></h3>
-                <p>Created a recommendation engine to suggest products to users based on their browsing and purchasing history.</p>
-            </div>
-    
-            <div class="project-card">
-                <h3><a href="https://github.com/IsmailOtukoya/_Segmentation_And_Profiling" target="_blank">Segmentation & Profiling</a></h3>
-                <p>Segmented customers using unsupervised learning techniques to better understand purchasing patterns.</p>
-            </div>
-    </section>
-        
+      <!-- Data Visualization Projects -->
+      <div class="card data-visualization">
+        <img src="data-viz-image1.jpg" alt="Data Visualization Project 1">
+        <div class="card-info">
+          <h3>Customer Segmentation and Price Optimization Dashboard</h3>
+          <a href="https://lookerstudio.google.com/reporting/9962ac91-6f16-40ee-ad74-793ed15fcd87/page/HbVEE">View Project</a>
+        </div>
+      </div>
+      <div class="card data-visualization">
+        <img src="data-viz-image2.jpg" alt="Data Visualization Project 2">
+        <div class="card-info">
+          <h3>Sales Dashboard Report</h3>
+          <a href="https://lookerstudio.google.com/reporting/9962ac91-6f16-40ee-ad74-793ed15fcd87/page/HbVEE">View Project</a>
+        </div>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:otukoyaismail@gmail.com">otukoyaismail@gmail.com</a></p>
-    </section>
+      <!-- Data Science Projects -->
+      <div class="card data-science">
+        <img src="data-science-image1.jpg" alt="Data Science Project 1">
+        <div class="card-info">
+          <h3>Customer Segmentation and Price Optimization</h3>
+          <a href="https://github.com/IsmailOtukoya/Customer-Segmentation-and-Price-Optimization-Project">View Project</a>
+        </div>
+      </div>
+      <div class="card data-science">
+        <img src="data-science-image2.jpg" alt="Data Science Project 2">
+        <div class="card-info">
+          <h3>Dynamic Pricing for Shortlets</h3>
+          <a href="https://github.com/IsmailOtukoya/Dynamic-Pricing-For-Shortlets">View Project</a>
+        </div>
+      </div>
 
+      <!-- Creative Writing -->
+      <div class="card creative-writing">
+        <img src="writing-image1.jpg" alt="Creative Writing 1">
+        <div class="card-info">
+          <h3>Understanding When Correlation Leads to Causation</h3>
+          <a href="https://medium.com/@otukoyaismail/understanding-when-correlation-leads-to-causation-why-is-it-important-in-data-science-43f74659d6fa">Read Article</a>
+        </div>
+      </div>
+      <div class="card creative-writing">
+        <img src="writing-image2.jpg" alt="Creative Writing 2">
+        <div class="card-info">
+          <h3>Is Price Optimization a Hoax or the Key to Maximizing Business Revenue?</h3>
+          <a href="https://medium.com/@otukoyaismail/is-price-optimization-a-hoax-or-the-key-to-maximizing-business-revenue-ced1703ada59">Read Article</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <img src="your-image.jpg" alt="Your Picture">
+    <h2>About Me</h2>
+    <p>Your bio goes here, talking about your passion for data science, data visualization, and writing.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Work With Me</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/yourprofile" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+      <a href="https://twitter.com/yourprofile" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="https://medium.com/@otukoyaismail" target="_blank"><img src="medium-icon.png" alt="Medium"></a>
+      <a href="https://github.com/IsmailOtukoya" target="_blank"><img src="github-icon.png" alt="GitHub"></a>
+      <a href="https://dev.to/yourprofile" target="_blank"><img src="devto-icon.png" alt="Dev.to"></a>
+      <a href="mailto:youremail@gmail.com"><img src="gmail-icon.png" alt="Gmail"></a>
+    </div>
+  </section>
 </body>
 </html>
