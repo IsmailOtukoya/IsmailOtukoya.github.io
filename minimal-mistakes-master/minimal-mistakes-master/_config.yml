@@ -126,7 +126,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an enthusiastic Data Scientist & Business Analyst passionate about driving insights in E-commerce and Retail."
   location         : "Lagos, Nigeria"
-  email            : "otukoyaismail@gmail.com
+  email            : "otukoyaismail@gmail.com"
   links:
     - label: "otukoyaismail@gmail.com"
       icon: "fas fa-fw fa-envelope-square"
